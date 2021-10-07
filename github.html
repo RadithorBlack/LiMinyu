@@ -78,6 +78,10 @@
             border: 1px solid #d8dee4;
             border-radius: 5px;
             color: #6e7781;
+            padding-right: 16px;
+            padding-left: 16px;
+            margin-right: 16px;
+            margin-left: 16px;
         }
 
         .box2-s {
@@ -86,7 +90,47 @@
             border: 1px solid #d8dee4;
             border-radius: 5px;
             color: #24292f;
-            font-weight: 545;
+            background-color: #f6f8fa;
+            font-weight: 548;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .box2-s:active {
+            background-color: #ebecf0;
+        }
+
+        .box2-b {
+            display: inline-block;
+            height: 32px;
+            border: 1px solid #2a9048;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #2da44e;
+            font-weight: 548;
+            padding-right: 16px;
+            padding-left: 16px;
+            margin-right: 16px;
+            margin-left: 16px;
+        }
+
+        .box2-b:hover {
+            background-color: #2c974b;
+        }
+
+        .box3 {
+            height: 120px;
+            line-height: 120px;
+        }
+
+        .box3 a {
+            font-size: 20px;
+            color: #0969da;
+            text-decoration: none;
+        }
+
+        .box3 a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -123,7 +167,7 @@
             <a href="#">Overview</a>
         </span>
         <span>
-            <a href="#">repositories</a>
+            <a href="#">Repositories</a>
         </span>
         <span>
             <a href="#">Projects</a>
@@ -138,32 +182,36 @@
         <input class="box2-search" type="text" value="Find a repository..." />
         <select class="box2-s">
             <option>type</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
+            <option>Public</option>
+            <option>Private</option>
+            <option>Sources</option>
+            <option>Fprks</option>
+            <option>Archived</option>
+            <option>Mirrors</option>
         </select>
         <select class="box2-s">
             <option>Language</option>
-            <option>2</option>
+            <option>HTML</option>
         </select>
         <select class="box2-s">
             <option>Sort</option>
-            <otpion>2</otpion>
-            <option>3</option>
+            <otpion>Name </otpion>
+            <option>Stars</option>
         </select>
 
-        <button>New</button>
+        <button class="box2-b">New</button>
     </div>
     <hr color="#d8dee4" />
 
-    <div class="box3">repository1</div>
-    <hr color="#d8dee4" />
-    <div class="box3">repository2</div>
-    <hr color="#d8dee4" />
-    <div class="box3">repository3</div>
+    <div class="box3">
+        <a href="#">repository1</a>
+    </div>
+    <div class="box3">
+        <a href="#">repository2</a>
+    </div>
+    <div class="box3">
+        <a href="#">repository3</a>
+    </div>
     <hr color="#d8dee4" />
 </body>
 
